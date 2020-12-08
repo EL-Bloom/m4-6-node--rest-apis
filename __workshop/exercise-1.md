@@ -17,3 +17,28 @@ Write out each endpoint, its method, and brief description of waht it should do.
 _This activity is more about the discussion in how to best organize data endpoints. There will not be any coding._
 
 ## Your Answer
+
+CLIENT SIDE
+| endpoint | method | Description |
+| -------- | ------ | ---------------------- |
+| `/test/clients` | `GET` | This is to retrieve the information of all the clients in the cafe|
+
+| `/test/clients/:id` | `GET` | This is to retrieve the information of a particular client by their IDs |
+
+| `/test/new-client` | `POST` | This is when a new client wants to make an account and it will be add to the system|
+
+| `/test/clients/:id/info/activity` | `PATCH` | This is to update an existing client's account and toggle if they are active of not |
+|
+| `/test/clients/remove` | `DELETE` | This is to delete a client's account |
+
+SERVER SIDE
+| endpoint | method | Description |
+| `/test/stocks` | `GET` | This is to retrieve all the items in the store and their quantity |
+
+| `/test/stocks/:id` | `GET` | This is to retrieve the information and quantity of a particular product |
+
+| `/test/stocks/new` | `POST` | This is to add new items to the database |
+
+| `/test/stocks/new-quantity` | `PATCH` | This is to update the quantity of an existing item |
+
+| `/test/stocks/remove` | `DELETE` | This is to delete an existing album, in the case it were discontinued or unavailable |
